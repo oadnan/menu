@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Klix meni</title>
+	
+	<style>
+	nav ul ul {
+	display: none;
+	}
+	
+	#l-pocetna {
+	border-bottom: 4px solid #FF5F5F;
+	border-top: 1px solid #ACACAC;
+	border-left: 1px solid #ACACAC;
+	border-right: 1px solid #ACACAC;
+	}
+	
+	#l-vijesti {
+	border-bottom: 4px solid #47A347;
+	border-top: 1px solid #ACACAC;
+	border-right: 1px solid #ACACAC;
+	}
+	
+	#l-biznis {
+	border-bottom: 4px solid #E68A00;
+	border-top: 1px solid #ACACAC;
+	border-right: 1px solid #ACACAC;
+	}
+	
+	#l-sport {
+	border-bottom: 4px solid #99CCFF;
+	border-top: 1px solid #ACACAC;
+	border-right: 1px solid #ACACAC;
+	}
+
+	nav ul li:hover > ul {
+		display: block;
+	}	
+	
+	nav ul {
+	background: #fff; 
+	padding: 0 20px;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+    }
+	
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+	
+	nav ul li {
+	float: left;
+    }
+	
+	nav ul li:hover {
+		background: #4b545f;
+	}
+	nav ul li:hover a {
+		color: #fff;
+	}
+	
+	nav ul li a {
+		display: block; padding: 7px 15px;
+		color: #757575; text-decoration: none;
+		font-family: 'arial', sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	
+	nav ul ul {
+		background: #5f6975; padding: 0;
+		position: absolute; top: 100%;
+		width: 140px;
+	}
+	
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+	
+	nav ul ul ul li {
+		border-left: 1px solid #575f6a;
+	}
+	
+	nav ul ul li a {
+		padding: 10px 15px;
+		color: #fff;
+	}
+	
+	nav ul ul li a:hover {
+		background: #4b545f;
+	}
+	
+	nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+	}
+		
+	</style>
+</head>
+
+<body>
+
+	<nav>
+	<ul>
+		<li id="l-pocetna"><a href="#">POČETNA</a></li>
+		<li id="l-vijesti"><a href="#">VIJESTI</a>
+			<ul>
+				<li><a href="#">Najnovije</a></li>
+				<li><a href="#">Lokalne</a>
+					<ul>
+						<li><a href="#">HNK</a></li>
+						<li><a href="#">Sarajevski kanton</a></li>
+						<li><a href="#">Tuzlanski kanton</a></li>
+					</ul>
+				</li>	
+				<li><a href="#">BiH</a></li>
+				<li><a href="#">Regija</a></li>
+				<li><a href="#">Svijet</a></li>
+			</ul>
+		</li>
+		<li id="l-biznis"><a href="#">BIZNIS</a>
+			<ul>
+				<li><a href="#">Privreda</a></li>
+				<li><a href="#">Finansije</a></li>
+				<li><a href="#">Investicije</a></li>
+			</ul>
+		</li>
+		<li id="l-sport"><a href="#">SPORT</a></li>
+		</ul>
+	</nav>
+	
+</body>  
+</html>
